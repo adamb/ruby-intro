@@ -1,10 +1,14 @@
 # this school of fish 
 
 class Fish
+  # a class variable
+  @@fishy_things = 0
+  
   # called when a new Fish is allocated
   def initialize 
     # @num_fish is an instance variable
     @num_fish = 0
+    @@fishy_things += 1
   end
   
   def spawn
@@ -15,6 +19,10 @@ class Fish
     @num_fish
   end
   
+  # a class method
+  def self.fishy_things 
+    @@fishy_things
+  end
 end
 
 begin
@@ -28,4 +36,5 @@ begin
   trout = Fish.new
   puts "trout.size is #{trout.size}, but grouper is still #{grouper.size}"
   
+  puts Fish.fishy_things
 end
