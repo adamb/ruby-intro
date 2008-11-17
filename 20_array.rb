@@ -17,6 +17,9 @@
   c = %w[Tahoe Donner Incline Jobs Sierra]
   puts "\narray c:"
   c.each { |e| puts e }
+
+  puts "\narray c sorted:"
+  c.sort.each { |e| puts e }
   
   d = a + c
   puts "\narray d:"
