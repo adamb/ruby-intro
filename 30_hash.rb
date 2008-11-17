@@ -1,6 +1,6 @@
 # some hash examples
 
-  h = {'adam' => 45, 'beguelin' => 65}
+  h = {'adam' => 45, 'beguelin' => 63}
   
   puts h['adam']
   h.each_key { |key| puts "key #{key} => #{h[key]}" }

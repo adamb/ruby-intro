@@ -14,6 +14,7 @@
   puts "\narray b:"
   b.each { |e| puts e }
   
+  # %w for an array of words
   c = %w[Tahoe Donner Incline Jobs Sierra]
   puts "\narray c:"
   c.each { |e| puts e }
@@ -21,6 +22,7 @@
   puts "\narray c sorted:"
   c.sort.each { |e| puts e }
   
+  # array math
   d = a + c
   puts "\narray d:"
   d.each { |e| puts e }
